@@ -1,0 +1,102 @@
+.cart-container {
+  padding: 120px 5%;
+}
+
+.cart-container .top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-container img {
+  cursor: pointer;
+}
+
+.cart-container .bg-color {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.go-back {
+  font-size: 40px;
+  color: #00302e;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.go-back:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  border-radius: 10px;
+}
+
+tr,
+th,
+td {
+  text-align: center;
+}
+
+tr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+table button {
+  border: 1px solid red;
+  color: red;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.button {
+  display: block;
+  background-color: #00302e;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.delivered {
+  color: green;
+}
+
+.cooking {
+  color: red;
+}
+
+@media screen and (max-width: 450px) {
+  table {
+    background-color: transparent;
+    width: 650px;
+  }
+  .table {
+    width: 100%;
+    overflow-x: scroll;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+}

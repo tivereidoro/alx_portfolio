@@ -1,0 +1,137 @@
+footer {
+  background-color: #0b0d17;
+  color: white;
+  padding: 100px 0% 0px 0%;
+}
+
+footer .main-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+  padding: 0px 3% 50px 4.7%;
+}
+
+footer .main-footer h5 {
+  margin-bottom: 20px;
+}
+
+footer .main-footer ul {
+  padding: 0px;
+}
+
+footer .main-footer ul li {
+  padding: 7px 0px;
+}
+
+footer .main-footer ul li a {
+  padding: 0px;
+  color: white;
+  transition: 0.5s ease-in-out;
+  display: inline;
+}
+
+footer .main-footer ul li a img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+footer .main-footer ul li a:hover {
+  padding: 0px;
+  color: #00302e;
+  background-color: transparent;
+  padding-left: 10px;
+}
+
+footer .sub-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 3% 10px 4.7%;
+}
+
+.sub-footer p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+footer .sub-footer .icons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 50px;
+}
+
+footer .sub-footer .icon {
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: -25px;
+  background-color: rgba(256, 256, 256, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 780px) {
+  footer {
+    padding-top: 20px;
+  }
+
+  footer .main-footer {
+    display: block;
+  }
+
+  footer .main-footer div {
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+  }
+  footer .main-footer div:last-child {
+    border-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .sub-footer {
+    display: block;
+  }
+
+  footer .sub-footer .icons {
+    justify-content: start;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 0px;
+  }
+
+  footer .sub-footer .icon {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
+/* Define the keyframes for the animation */
+@keyframes whatsappAnimationIn {
+  0% {
+    bottom: -100px; /* Start from bottom and move up */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    bottom: 70px; /* Move up to the desired position */
+    opacity: 1; /* Fade in with full opacity */
+  }
+}
+
+@keyframes whatsappAnimationOut {
+  0% {
+    bottom: 70px; /* Start from the desired position */
+    opacity: 1; /* Start with full opacity */
+  }
+  100% {
+    bottom: -100px; /* Move back down and disappear */
+    opacity: 0; /* Fade out with opacity 0 */
+  }
+}

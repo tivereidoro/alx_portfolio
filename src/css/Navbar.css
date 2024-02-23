@@ -1,0 +1,193 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  padding: 0px 3%;
+  color: #eee;
+  background-color: #00302e;
+  height: 100px;
+}
+
+.white {
+  color: black;
+  background-color: rgba(256, 256, 256, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav .logo {
+  position: relative;
+  top: -35px;
+}
+
+.nav .logo img {
+  width: 50px;
+  display: block;
+}
+
+.nav .logo h2 {
+  margin-top: auto;
+  margin-left: 20px;
+}
+
+.nav .logo a {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.nav .logo a:hover {
+  color: white;
+}
+
+.white .logo a {
+  color: black;
+}
+.white .logo a:hover {
+  color: black;
+}
+
+.nav .logo .text {
+  position: relative;
+  top: -5px;
+  left: -10px;
+}
+
+.nav .logo .foods {
+  position: absolute;
+  letter-spacing: 21px;
+  left: 23px;
+  top: 33px;
+}
+
+.nav a {
+  font-size: 16px;
+  padding: 10px 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.logout {
+  font-size: 16px;
+  padding: 10px 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.white a {
+  color: black;
+}
+
+.white a:hover {
+  color: black;
+}
+
+.nav .links {
+  display: flex;
+}
+
+.side-bar {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  font-size: 16px;
+  padding: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+li a:hover {
+  color: #00302e;
+  background-color: #eee;
+}
+
+.close-icon {
+  position: absolute;
+  top: 7%;
+  right: 2%;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: red;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav svg {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+  .side-bar {
+    display: block;
+  }
+
+  .nav .links {
+    display: none;
+  }
+  .white {
+    color: black;
+    background-color: rgba(256, 256, 256, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .nav {
+    padding-left: 1%;
+    padding-right: 4%;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+  }
+  .nav .logo .foods {
+    position: absolute;
+    letter-spacing: 13px;
+    left: 23px;
+    top: 33px;
+  }
+  .white {
+    color: black;
+    background-color: rgba(256, 256, 256, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.cart-comp {
+  position: relative;
+}
+
+.badge {
+  background-color: red;
+  display: flex;
+  top: 5px;
+  right: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+}
